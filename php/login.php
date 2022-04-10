@@ -9,7 +9,7 @@
     $_SESSION["userid"]= $row['id'];
     $_SESSION["username"]= $row['username'];
     if ($established_connection -> num_rows > 0) {
-        header('Location: ../extras/home.html');
+        header('Location: ../php/home.php');
     } else {
         header('Location: ../extras/login.html');
     }
