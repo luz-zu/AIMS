@@ -12,7 +12,6 @@ CREATE TABLE IF NOT EXISTS `contact` (
   PRIMARY KEY (`id`)
 );
 
-
 CREATE TABLE IF NOT EXISTS `farmer_details` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `firstname` varchar(50) DEFAULT NULL,

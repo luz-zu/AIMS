@@ -1508,3 +1508,802 @@ input[type=password] {
 	text-transform: capitalize;
 }
 
+.cropDetails {
+	margin-top: 10%;
+	margin-left: 30%;
+	height: 100%;
+	max-width: 700px;
+	width: 100%;
+	background: rgba(233, 233, 233, 0.70);
+	padding: 25px 30px;
+	filter: blur(30%);
+	border-radius: 16px;
+}
+
+.main-profile-edit {
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	/* background: rgba(1, 80, 1, 0.418); */
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.profile-edit {
+	max-width: 900px;
+	height: 65%;
+	width: 100%;
+	background: rgba(233, 233, 233, 0.70);
+	padding: 25px 30px;
+	filter: blur(30%);
+	border-radius: 16px;
+}
+
+.profile-edit h1 {
+	font-size: 30px;
+}
+
+.profile-edit label {
+	font-size: 18px;
+}
+
+.main-profile-edit input {
+	height: 40px;
+	width: 24%;
+	outline: none;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+	padding-left: 15px;
+	font-size: 16px;
+	border-bottom-width: 2px;
+	transition: all 0.3s ease;
+	font-size: 18px;
+}
+
+.edit_profile #email {
+	width: 27%;
+	padding-right: 8%;
+	margin-left: 15%;
+}
+
+.edit_profile #phonenumber {
+	width: 27%;
+	padding-right: 8%;
+	margin-left: 6%;
+}
+
+.edit_profile #marital_status {
+	width: 27%;
+	padding-right: 8%;
+	margin-left: 6%;
+}
+
+.edit_profile #education {
+	width: 27%;
+	padding-right: 3%;
+	margin-left: 11.5%;
+}
+
+.edit_profile #spouse_name {
+	width: 27%;
+	padding-right: 8%;
+	margin-left: 6%;
+}
+
+.edit_profile #num_children {
+	width: 27%;
+	padding-right: 8%;
+	margin-left: 1%;
+}
+
+.edit_profile #children_name {
+	width: 27%;
+	padding-right: 8%;
+	margin-left: 2%;
+}
+
+.edit_profile #province {
+	width: 27%;
+	padding-right: 8%;
+	margin-left: 11%;
+}
+
+.edit_profile #district {
+	width: 27%;
+	padding-right: 8%;
+	margin-left: 16%;
+}
+
+.edit_profile #ward {
+	width: 27%;
+	padding-right: 8%;
+	margin-left: 14.5%;
+}
+
+.edit_profile #location {
+	width: 27%;
+	padding-right: 8%;
+	margin-left: 14.5%;
+}
+
+.edit_profile #tole {
+	width: 27%;
+	padding-right: 8%;
+	margin-left: 15.5%;
+}
+
+.main-profile-edit #submit {
+	margin-right: 10%;
+	float: right;
+	margin-top: 1%;
+	padding: 5px;
+	border-radius: 5px;
+	font-size: 16px;
+	border: 2px solid #009688;
+	background-color: #009688;
+	color: #fff;
+	/* width: 5%; */
+	text-transform: capitalize;
+}
+
+.main-profile-edit #cancel {
+	margin-left: 100%;
+	float: right;
+	margin-top: -4.5%;
+	padding: 5px;
+	border-radius: 5px;
+	font-size: 16px;
+	border: 2px solid #009688;
+	background-color: #009688;
+	color: #fff;
+	/* width: 5%; */
+	text-transform: capitalize;
+}
+
+.main-new-password {
+	display: flex;
+	height: 80vh;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.new-password {
+	max-width: 500px;
+	width: 100%;
+	background: rgba(233, 233, 233, 0.70);
+	padding: 25px 30px;
+	filter: blur(30%);
+	border-radius: 16px;
+}
+
+.new-password label {
+	font-size: 18px;
+}
+
+.main-new-password #submit {
+	float: right;
+	margin-top: 1%;
+	padding: 5px;
+	border-radius: 5px;
+	font-size: 16px;
+	border: 2px solid #009688;
+	background-color: #009688;
+	color: #fff;
+	/* width: 5%; */
+	text-transform: capitalize;
+}
+
+.main-new-password #cancel {
+	margin-left: 100%;
+	float: right;
+	margin-top: -8.5%;
+	padding: 5px;
+	border-radius: 5px;
+	font-size: 16px;
+	border: 2px solid #009688;
+	background-color: #009688;
+	color: #fff;
+	/* width: 5%; */
+	text-transform: capitalize;
+}
+
+
+/* cropdetails css */
+
+.main-cropdetails {
+	display: flex;
+	height: 10%;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	/* background: rgba(1, 80, 1, 0.418); */
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.cropDetails {
+	margin-left: 1%;
+	max-width: 1000px;
+	width: 100%;
+	background: rgba(233, 233, 233, 0.70);
+	padding: 25px 30px;
+	filter: blur(30%);
+	border-radius: 16px;
+}
+
+.cropDetails label {
+	font-size: 18px;
+}
+
+.inputbox_cropdetails input {
+	height: 40px;
+	width: 24%;
+	outline: none;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+	padding-left: 15px;
+	font-size: 16px;
+	border-bottom-width: 2px;
+	transition: all 0.3s ease;
+	font-size: 18px;
+}
+
+.inputbox_cropdetails #cropname {
+	width: 27%;
+	padding-right: 8%;
+	margin-left: 11%;
+}
+
+.inputbox_cropdetails #production {
+	width: 27%;
+	padding-right: 8%;
+	margin-left: 4%;
+}
+
+.inputbox_cropdetails #growth {
+	width: 27%;
+	padding-right: 8%;
+	margin-left: 5.5%;
+	margin-right: 4.3%;
+}
+
+.inputbox_cropdetails #fertilizers {
+	width: 27%;
+	padding-right: 8%;
+	margin-left: 4.5%;
+}
+
+.inputbox_cropdetails #reproduction {
+	width: 27%;
+	padding-right: 8%;
+	margin-left: 1%;
+	margin-right: 4%;
+}
+
+.inputbox_cropdetails #cropcycle {
+	width: 27%;
+	padding-right: 8%;
+	margin-left: 8.3%;
+}
+
+.inputbox_cropdetails #growth_season {
+	width: 27%;
+	padding-right: 8%;
+	margin-left: 10.7%;
+	margin-right: 4.2%;
+}
+
+.inputbox_cropdetails #farmers {
+	width: 27%;
+	padding-right: 8%;
+	margin-left: 3%;
+}
+
+.inputbox_cropdetails #submit {
+	margin-right: 10%;
+	float: right;
+	margin-top: 1%;
+	padding: 5px;
+	border-radius: 5px;
+	font-size: 16px;
+	border: 2px solid #009688;
+	background-color: #009688;
+	color: #fff;
+	/* width: 5%; */
+	text-transform: capitalize;
+}
+
+.inputbox_cropdetails #cancel {
+	margin-left: 80%;
+	float: right;
+	margin-top: -4.2%;
+	padding: 5px;
+	border-radius: 5px;
+	font-size: 16px;
+	border: 2px solid #009688;
+	background-color: #009688;
+	color: #fff;
+	/* width: 5%; */
+	text-transform: capitalize;
+}
+
+
+/* Drop down css */
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	font-size: 14px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.dropdown1 {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content1 {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+
+.dropdown-content1 a {
+	color: black;
+	padding: 12px 16px;
+	font-size: 14px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown-content1 a:hover {
+	background-color: #ddd;
+}
+
+.dropdown1:hover .dropdown-content1 {
+	display: block;
+}
+
+
+/* Account Page */
+
+.account-form {
+	display: flex;
+	height: 90vh;
+	top: 57%;
+	justify-content: center;
+	align-items: center;
+	padding: 25px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.accForm {
+	max-width: 700px;
+	width: 100%;
+	background: rgba(233, 233, 233, 0.70);
+	padding: 25px 30px;
+	filter: blur(30%);
+	border-radius: 16px;
+}
+
+.accForm label {
+	font-size: 18px;
+}
+
+.accForm h1 {
+	font-size: 20px;
+}
+
+.acc-form #bankname {
+	width: 70%;
+	padding-right: 8%;
+	margin-left: 11.3%;
+	height: 5vh;
+}
+
+.acc-form #branchname {
+	width: 70%;
+	padding-right: 8%;
+	margin-left: 8.6%;
+	height: 5vh;
+}
+
+.acc-form #accountnumber {
+	width: 70%;
+	padding-right: 8%;
+	margin-left: 4%;
+	height: 5vh;
+}
+
+.acc-form #accountname {
+	width: 70%;
+	padding-right: 8%;
+	margin-left: 7%;
+	height: 5vh;
+}
+
+#account {
+	float: left;
+	margin-left: 90%;
+	padding: 7px;
+	border-radius: 5px;
+	font-size: 16px;
+	border: 2px solid #009688;
+	background-color: #009688;
+	color: #fff;
+	text-transform: capitalize;
+}
+
+
+/* Adrress Page */
+
+.address-form {
+	display: flex;
+	height: 90vh;
+	top: 57%;
+	justify-content: center;
+	align-items: center;
+	padding: 25px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.addForm {
+	max-width: 700px;
+	width: 100%;
+	background: rgba(233, 233, 233, 0.70);
+	padding: 25px 30px;
+	filter: blur(30%);
+	border-radius: 16px;
+}
+
+.addForm label {
+	font-size: 18px;
+}
+
+.addForm h1 {
+	font-size: 20px;
+}
+
+.addForm h2 {
+	font-size: 20px;
+}
+
+.add-form input {
+	height: 40px;
+	width: 24%;
+	outline: none;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+	padding-left: 15px;
+	font-size: 16px;
+	border-bottom-width: 2px;
+	transition: all 0.3s ease;
+	font-size: 18px;
+}
+
+.add-form #identification {
+	width: 23%;
+	padding-right: 8%;
+	margin-left: 9%;
+	height: 5vh;
+}
+
+.add-form #identity {
+	margin-left: 3%;
+}
+
+.add-form #idnumber {
+	width: 23%;
+	padding-right: 8%;
+	margin-left: 3%;
+	height: 5vh;
+}
+
+.add-form #doi {
+	width: 23%;
+	padding-right: 8%;
+	margin-left: 10.8%;
+	height: 5vh;
+}
+
+.add-form #district {
+	width: 25%;
+	padding-right: 8%;
+	height: 5vh;
+}
+
+.add-form #city {
+	width: 25%;
+	padding-right: 8%;
+	margin-left: 13%;
+	height: 5vh;
+}
+
+.add-form #street {
+	width: 25%;
+	padding-right: 8%;
+	margin-left: 9%;
+	height: 5vh;
+}
+
+.add-form #ward {
+	width: 25%;
+	padding-right: 8%;
+	height: 5vh;
+}
+
+.add-form #province {
+	width: 25%;
+	padding-right: 8%;
+	margin-left: 13%;
+	height: 5vh;
+}
+
+.add-form #country {
+	width: 25%;
+	padding-right: 8%;
+	margin-left: 9%;
+	height: 5vh;
+}
+
+.add-form #mobile {
+	width: 37%;
+	padding-right: 8%;
+	margin-left: 8%;
+	height: 5vh;
+}
+
+.add-form #landline {
+	width: 37%;
+	padding-right: 8%;
+	margin-left: 10%;
+	height: 5vh;
+}
+
+#address {
+	float: left;
+	margin-left: 90%;
+	padding: 7px;
+	border-radius: 5px;
+	font-size: 16px;
+	border: 2px solid #009688;
+	background-color: #009688;
+	color: #fff;
+	text-transform: capitalize;
+}
+
+
+/*  Verification */
+
+.verification {
+	display: flex;
+	height: 80vh;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	/* background: rgba(1, 80, 1, 0.418); */
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.verify {
+	max-width: 700px;
+	width: 100%;
+	background: rgba(233, 233, 233, 0.70);
+	padding: 25px 30px;
+	filter: blur(30%);
+	border-radius: 16px;
+}
+
+.verify h1 {
+	margin-left: 34%;
+	font-size: 30px;
+}
+
+.verify label {
+	font-size: 18px;
+}
+
+.otp input {
+	height: 40px;
+	width: 24%;
+	outline: none;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+	padding-left: 15px;
+	font-size: 16px;
+	border-bottom-width: 2px;
+	transition: all 0.3s ease;
+	font-size: 18px;
+}
+
+.otp #otpnumber {
+	width: 33%;
+	padding-right: 8%;
+	margin-left: 34%;
+}
+
+#text {
+	font-size: 18px;
+	margin-left: 4%;
+}
+
+#textt {
+	margin-left: 20%;
+	font-size: 18px;
+}
+
+#ttext {
+	margin-left: 24%;
+	font-size: 18px;
+}
+
+#resend {
+	float: left;
+	margin-top: 1%;
+	margin-left: 30%;
+	padding: 5px;
+	border-radius: 5px;
+	font-size: 16px;
+	border: 2px solid #009688;
+	background-color: #009688;
+	color: #fff;
+	text-transform: capitalize;
+}
+
+#proceed {
+	float: right;
+	margin-top: -6%;
+	margin-right: 40%;
+	padding: 5px;
+	border-radius: 5px;
+	font-size: 16px;
+	border: 2px solid #009688;
+	background-color: #009688;
+	color: #fff;
+	margin-left: 50%;
+	width: 10%;
+	text-transform: capitalize;
+}
+
+.verify h1 {
+	margin-left: 34%;
+	font-size: 30px;
+}
+
+.verify label {
+	font-size: 18px;
+}
+
+.otp input {
+	height: 40px;
+	width: 24%;
+	outline: none;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+	padding-left: 15px;
+	font-size: 16px;
+	border-bottom-width: 2px;
+	transition: all 0.3s ease;
+	font-size: 18px;
+}
+
+.otp #otpnumber {
+	width: 32%;
+	padding-right: 8%;
+	margin-left: 32%;
+}
+
+#text {
+	font-size: 18px;
+	margin-left: 4%;
+}
+
+#textt {
+	margin-left: 20%;
+	font-size: 18px;
+}
+
+#ttext {
+	margin-left: 24%;
+	font-size: 18px;
+}
+
+#resend {
+	float: left;
+	margin-top: 1%;
+	margin-left: 27%;
+	padding: 5px;
+	border-radius: 5px;
+	font-size: 16px;
+	border: 2px solid #009688;
+	background-color: #009688;
+	color: #fff;
+	text-transform: capitalize;
+}
+
+#proceed {
+	float: right;
+	margin-top: -6%;
+	margin-right: 28%;
+	padding: 5px;
+	border-radius: 5px;
+	font-size: 16px;
+	border: 2px solid #009688;
+	background-color: #009688;
+	color: #fff;
+	margin-left: 50%;
+	width: 15%;
+	text-transform: capitalize;
+}
+
+.passwordNote {
+	position: absolute;
+	width: 30%;
+	font-size: 14px;
+	margin-top: -0.4%;
+	font-weight: bold;
+}
+
+/* History Page */
+.historyBox {
+	margin-top: 1%;
+    max-width: 1362px;
+    width: 100%;
+	margin-left: 15%;
+    background: rgba(233, 233, 233, 0.70);
+    padding: 25px 30px;
+    filter: blur(30%);
+    border-radius: 16px;
+}
+
+td, th {
+    border: 1px solid #ffffff;
+    text-align: center;
+    padding: 8px;
+	font-size: 14px;
+}
+
+th {
+    color: black;
+	font-size: 16px;
+}
