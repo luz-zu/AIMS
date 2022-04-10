@@ -1,3 +1,4 @@
+
 CREATE DATABASE IF NOT EXISTS `hamro_agriculture`;
 USE `hamro_agriculture`;
 
@@ -10,6 +11,7 @@ CREATE TABLE IF NOT EXISTS `contact` (
   `time` timestamp NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
   PRIMARY KEY (`id`)
 );
+
 
 CREATE TABLE IF NOT EXISTS `farmer_details` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
