@@ -17,18 +17,26 @@
         
     
         <div class="icons">
-           
-            <a id="menu-btn" class="fas fa-bars"></a>
-            <a id="search-btn" class="fas fa-search"></a>
-            <a id="clipboard-btn" class="fas fa-clipboard"></a>
-            <a id="login-btn" class="fas fa-user"></a>
+            <div class="dropdown1">
+                <a id="clipboard-btn" class="fas fa-clipboard"></a>
+                <div class="dropdown-content1">
+                    <a href="../php/history.php">History</a>
+                    <a href="./cropdetails.html">Add Crop Details</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a id="login-btn" class="fas fa-user"></a>
+                <div class="dropdown-content">
+                    <a href="./changepassword.html">Change Password</a>
+                    <a href="../php/logout.php">Log Out</a>
+                </div>
+            </div>
         </div>
-    
     </header>
     
     
     
-    <div class="main-signup-form">
+    <div class="editprofile">
         <form class="signupForm" action="#" method="post">
     <!--  User details contain Name, Email, Username, Date-of-Birth, Contact,and Password form for Registration -->
             <div class="signup-user-details">
@@ -59,7 +67,7 @@
 
                     <h2>Family Details</h2>
                     <label for="spousename">Family Members:</label>
-                    <input id="familymember" name="familymember" type="text" required>
+                    <input id="familymember2" name="familymember" type="text" required>
 
                     <label for="childname">Child's name:</label>
                     <input id="childname" name="childname" type="text" required>
