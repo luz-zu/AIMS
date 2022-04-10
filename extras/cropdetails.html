@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crops Details</title>
       <!-- font awesome cdn link  -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
       <!-- custom css file link  -->
       <link rel="stylesheet" href="../css/style.css">
@@ -14,7 +15,7 @@
 <body>
     <header class="header">
 
-        <a href="home.html" class="logo"> <i class="fas fa-leaf"></i> AIMS </a>
+        <a href="../php/home.php" class="logo"> <i class="fas fa-leaf"></i> AIMS </a>
     
         
         <div class="icons">
@@ -37,7 +38,7 @@
     </header>
 
         <div class="main-cropdetails">
-            <form class="cropDetails"action="#" method="post">
+            <form class="cropDetails" action="../php/cropdetails.php" method="post" enctype="multipart/form-data">
                     
                 <h1>Crop Details</h1>
                 
@@ -56,10 +57,14 @@
                         <option value="Radish">Radish</option>
                         <option value="Buck Wheat">Buck Wheat</option>
                     </datalist>
+                    <label id="imageuploadText"for="imagesupload">Upload Image:</label>
+                    <input id="imagesupload" type="file" name="imagesupload">
+                    <br><br>
+
                     
                     <label for="production">Production(kg):</label>
                     <input id="production" name="production"  type="text" required>
-                    <br><br>
+                    
 
                     <label for="growthStatus">Growth Status:</label>
                     <select id="growthStatus" name="growth" required>
@@ -68,10 +73,11 @@
                         <option value="Normal">Normal</option>
                         <option value="Fast">Fast</option>
                     </select>
+                    <br><br>
                     
                     <label for="fertilizers">Fertilizers Used:</label>
                     <input type="text" name="fertilizers" id="fertilizers" type="text" required>
-                    <br><br>
+                    
 
                     <label for="reproductionType">Reproduction Type:</label>
                     <select id="reproductionType" name="reproduction" required>
@@ -79,7 +85,8 @@
                         <option value="Asexual">Asexual</option>
                         <option value="Sexual">Sexual</option>
                     </select>
-                    
+                    <br><br>
+
                     <label for="cropcycleType">Crop Cycle:</label>
                     <select id="cropcycleType" name="cropcycle" required>
                         <option value="staus">Select</option>
@@ -88,10 +95,9 @@
                         <option value="Biennial">Biennial</option>
                     </select>
 
-                    <br><br>
-
                     <label for="growth_season">Seasons:</label>
                     <input  name="seasons" id="growth_season" type="text" required>
+                    <br><br>
 
                     <label for="farmers">Farmer Rate(Rs.):</label>
                     <input id="farmers" name="farmers" required>
@@ -109,8 +115,7 @@
                     </select>
                     <br><br>
 
-                    <button id= "submit" type="submit" class="register" onclick="location.href='./register.html'">Submit</button>
-                    <button id= "cancel" type="submit" class="register" >Cancel</button>
+                    <button id= "submit" type="submit" class="register">Submit</button>
                 </div>
             </div>
                 
