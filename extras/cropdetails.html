@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crops Details</title>
+      <!-- font awesome cdn link  -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+      <!-- custom css file link  -->
+      <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="header">
+
+        <a href="home.html" class="logo"> <i class="fas fa-leaf"></i> AIMS </a>
+    
+        
+        <div class="icons">
+           
+        <a id="menu-btn" class="fas fa-bars"></a>
+        <a id="search-btn" class="fas fa-search"></a>
+        <a id="clipboard-btn" class="fas fa-clipboard"></a>
+        <a id="login-btn" class="fas fa-user"></a>
+        </div>
+
+    </header>
+
+        <div class="main-cropdetails">
+            <form class="cropDetails"action="../php/cropdetails.php" method="post">
+                    
+                <h1>Crop Details</h1>
+                
+                <div class="inputbox_cropdetails">
+        
+                    <label for="cropname">Crop Name:</label>
+                    <input id="cropname" name="cropname" type="text"  required>
+                    
+
+                    <label for="production">Production(kg):</label>
+                    <input id="production" name="production"  type="text" required>
+                    <br><br>
+
+                    <label for="growth">Growth Status:</label>
+                    <input id="growth" name="growth"  required>
+
+                    <label for="fertilizers">Fertilizers Used:</label>
+                    <input type="fertilizers" name="fertilizers" id="fertilizers" type="text" required>
+                    <br><br>
+
+                    
+                    <label  for="reproduction">Reproduction Type:</label>
+                    <input type="reproduction" name="reproduction" id="reproduction" type="text" required>
+               
+                    
+
+                    <label for="cropcycle">Crop Cycle:</label>
+                    <input type="cropcycle" name="cropcycle" id="cropcycle" type="text" required>
+                    <br><br>
+
+                    <label for="growth_season">Seasons:</label>
+                    <input type="growth_season name="cropcycle" id="growth_season" type="text" required>
+
+                    <label for="farmers">Farmer Rate(Rs.):</label>
+                    <input id="farmers" name="farmers" required>
+                    <br><br>
+
+                    <button id= "submit" type="submit" class="register" onclick="location.href='./register.html'">Submit</button>
+                    <button id= "cancel" type="submit" class="register" >Cancel</button>
+                </div>
+            </div>
+                
+            </form>
+
+        </div>
+
+        
+    
+</body>
+</html>
