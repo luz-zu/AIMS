@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>home</title>
 
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -14,28 +14,42 @@
 
 </head>
 <body>
+<!-- Header
+<header class="header">
+    <a href="../index.html" class="logo"> <i class="fas fa-leaf"></i> AIMS </a>
+    <nav>
+        <ul class="navigation">
+            <a href="../index.html">Home</a>
+            <a href="./about.html">About Us</a>
+            <a href="./blog.html">Blog</a>
+            <a href="./contact.html">Contact</a>
+            <a href="./login.html">Login</a>
+        </ul>
+    </nav>
+    <!--End of Header section-->
+<!-- </header> --> 
+
 
 <header class="header">
+
     <a href="home.html" class="logo"> <i class="fas fa-leaf"></i> AIMS </a>
+
+    <form action="" class="search-form">
+        <input type="search" placeholder="search here..." id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
     <div class="icons">
-        <div class="dropdown1">
-            <a id="clipboard-btn" class="fas fa-clipboard"></a>
-            <div class="dropdown-content1">
-                <a href="../php/history.php">History</a>
-                <a href="./cropdetails.html">Add Crop Details</a>
-            </div>
-        </div>
-        <div class="dropdown">
-            <a id="login-btn" class="fas fa-user"></a>
-            <div class="dropdown-content">
-                <a href="./profileedit.html">Edit Profile</a>
-                <a href="./changepassword.html">Change Password</a>
-                <a href="../php/logout.php">Log Out</a>
-            </div>
-        </div>
+       
+        <a id="search-btn" class="fas fa-search"></a>
+        <a id="clipboard-btn" class="fas fa-clipboard"></a>
+        <a id="login-btn" class="fas fa-user"></a>
     </div>
 
 </header>
+
+<a href="./cropdetails.html">crop details</a>
+<a href="./profileedit.html">Edit Profile</a>
 
 <!--End of header section-->
 
