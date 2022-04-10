@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
-
 * {
 	font-family: 'Poppins', sans-serif;
 	margin: 0;
@@ -1159,15 +1158,15 @@ input[type=password] {
 	box-sizing: border-box;
 }
 
+#login-btn:hover {
+	transform: scale(1.2);
+	cursor: pointer;
+}
 
-/* .loginBox input[type="text"] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-} */
+#clipboard-btn:hover {
+	transform: scale(1.2);
+	cursor: pointer;
+}
 
 .loginBox input[type="submit"] {
 	border: 0;
@@ -1185,17 +1184,42 @@ input[type=password] {
 }
 
 .loginBox button {
-	border-radius: 10px;
-	width: 100px;
+	border-radius: 5px;
+	width: 100%;
 	padding: 10px;
 	background-color: #032525;
 	color: white;
-	font-size: 18px;
+	font-size: 14px;
+	cursor: pointer;
 }
 
-.psw {
-	position: relative;
-	background: rgba(233, 233, 233, 0.70);
+.loginBox button:hover {
+	background-color: #074444;
+}
+
+.forgotPassword a {
+	font-size: 14px;
+	color: rgb(94, 93, 93);
+	margin-left: 32%;
+	cursor: pointer;
+}
+
+.forgotPassword a:hover {
+	color: rgb(51, 50, 50);
+}
+
+
+/* Edit Profile */
+
+.editprofile {
+	display: flex;
+	height: 60vh;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
 }
 
 
@@ -1270,6 +1294,7 @@ input[type=password] {
 	width: 27%;
 	padding-right: 3%;
 	margin-left: 9.5%;
+	margin-right: 11%;
 }
 
 .signup-user-details #username {
@@ -1282,6 +1307,7 @@ input[type=password] {
 	width: 27%;
 	padding-right: 8%;
 	margin-left: 10.5%;
+	margin-right: 11%;
 }
 
 .signup-user-details #phonenumber {
@@ -1294,6 +1320,7 @@ input[type=password] {
 	width: 27%;
 	padding-right: 8%;
 	margin-left: 6.3%;
+	margin-right: 11%;
 }
 
 .signup-user-details #confirmpassword {
@@ -1307,6 +1334,7 @@ input[type=password] {
 	padding-right: 8%;
 	margin-left: 5.5%;
 	height: 4.5vh;
+	margin-right: 11%;
 }
 
 .signup-user-details #status {
@@ -1316,15 +1344,23 @@ input[type=password] {
 	height: 4.5vh;
 }
 
+#cropStatus {
+	width: 27%;
+	margin-left: 8%;
+	margin-right: 4.4%;
+	height: 4.5vh;
+}
+
 .signup-user-details #education {
 	width: 27%;
 	padding-right: 8%;
 	margin-left: 6%;
+	margin-right: 11%;
 }
 
 .signup-user-details #idnumber {
 	width: 27%;
-	padding-right: 8%;
+	padding-right: 1%;
 	margin-left: 2.5%;
 	height: 4.5vh;
 }
@@ -1333,6 +1369,7 @@ input[type=password] {
 	width: 27%;
 	padding-right: 8%;
 	margin-left: 2.8%;
+	margin-right: 11%;
 }
 
 .signup-user-details #mothername {
@@ -1345,6 +1382,7 @@ input[type=password] {
 	width: 27%;
 	padding-right: 8%;
 	margin-left: 2%;
+	margin-right: 11%;
 }
 
 .signup-user-details #childname {
@@ -1359,10 +1397,52 @@ input[type=password] {
 	margin-left: 1%;
 }
 
+#familymember2 {
+	width: 27%;
+	padding-right: 8%;
+	margin-left: 1%;
+	margin-right: 11%;
+}
+
 .signup-user-details #province {
 	width: 27%;
 	padding-right: 8%;
 	margin-left: 7%;
+	height: 4.5vh;
+	margin-right: 11%;
+}
+
+#province1 {
+	width: 27%;
+	margin-top: 2%;
+	padding-right: 8%;
+	margin-left: 10.5%;
+	height: 4.5vh;
+}
+
+#growthStatus {
+	width: 27%;
+	margin-top: 2%;
+	padding-right: 8%;
+	margin-left: 5.5%;
+    margin-right: 4.2%;
+	height: 4.5vh;
+}
+
+#reproductionType {
+	width: 27%;
+	margin-top: 2%;
+	padding-right: 8%;
+	margin-left: 1%;
+    margin-right: 4.2%;
+	height: 4.5vh;
+}
+
+#cropcycleType {
+	width: 27%;
+	margin-top: 2%;
+	padding-right: 8%;
+	margin-left: 7.9%;
 	height: 4.5vh;
 }
 
@@ -1370,6 +1450,7 @@ input[type=password] {
 	width: 27%;
 	padding-right: 8%;
 	margin-left: 5.8%;
+	margin-right: 11%;
 }
 
 .signup-user-details #street {
@@ -1382,12 +1463,13 @@ input[type=password] {
 	width: 27%;
 	padding-right: 8%;
 	margin-left: 9.5%;
+	margin-right: 11%;
 }
 
 .signup-user-details #district {
 	width: 27%;
 	padding-right: 8%;
-	margin-left: 12%;
+	margin-left: 12.2%;
 }
 
 .signup-user-details #fathername {
@@ -1583,11 +1665,10 @@ input[type=password] {
 
 .main-new-password {
 	display: flex;
-	height: 100vh;
+	height: 80vh;
 	justify-content: center;
 	align-items: center;
 	padding: 10px;
-	/* background: rgba(1, 80, 1, 0.418); */
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -1607,7 +1688,6 @@ input[type=password] {
 }
 
 .main-new-password #submit {
-	margin-right: 20%;
 	float: right;
 	margin-top: 1%;
 	padding: 5px;
@@ -1691,7 +1771,8 @@ input[type=password] {
 .inputbox_cropdetails #growth {
 	width: 27%;
 	padding-right: 8%;
-	margin-left: 8.4%;
+	margin-left: 5.5%;
+	margin-right: 4.3%;
 }
 
 .inputbox_cropdetails #fertilizers {
@@ -1703,7 +1784,8 @@ input[type=password] {
 .inputbox_cropdetails #reproduction {
 	width: 27%;
 	padding-right: 8%;
-	margin-left: 4%;
+	margin-left: 1%;
+	margin-right: 4%;
 }
 
 .inputbox_cropdetails #cropcycle {
@@ -1715,13 +1797,14 @@ input[type=password] {
 .inputbox_cropdetails #growth_season {
 	width: 27%;
 	padding-right: 8%;
-	margin-left: 14.2%;
+	margin-left: 10.7%;
+	margin-right: 4.2%;
 }
 
 .inputbox_cropdetails #farmers {
 	width: 27%;
 	padding-right: 8%;
-	margin-left: 2.5%;
+	margin-left: 3%;
 }
 
 .inputbox_cropdetails #submit {
@@ -1750,4 +1833,477 @@ input[type=password] {
 	color: #fff;
 	/* width: 5%; */
 	text-transform: capitalize;
+}
+
+
+/* Drop down css */
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	font-size: 14px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.dropdown1 {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content1 {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+
+.dropdown-content1 a {
+	color: black;
+	padding: 12px 16px;
+	font-size: 14px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown-content1 a:hover {
+	background-color: #ddd;
+}
+
+.dropdown1:hover .dropdown-content1 {
+	display: block;
+}
+
+
+/* Account Page */
+
+.account-form {
+	display: flex;
+	height: 90vh;
+	top: 57%;
+	justify-content: center;
+	align-items: center;
+	padding: 25px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.accForm {
+	max-width: 700px;
+	width: 100%;
+	background: rgba(233, 233, 233, 0.70);
+	padding: 25px 30px;
+	filter: blur(30%);
+	border-radius: 16px;
+}
+
+.accForm label {
+	font-size: 18px;
+}
+
+.accForm h1 {
+	font-size: 20px;
+}
+
+.acc-form #bankname {
+	width: 70%;
+	padding-right: 8%;
+	margin-left: 11.3%;
+	height: 5vh;
+}
+
+.acc-form #branchname {
+	width: 70%;
+	padding-right: 8%;
+	margin-left: 8.6%;
+	height: 5vh;
+}
+
+.acc-form #accountnumber {
+	width: 70%;
+	padding-right: 8%;
+	margin-left: 4%;
+	height: 5vh;
+}
+
+.acc-form #accountname {
+	width: 70%;
+	padding-right: 8%;
+	margin-left: 7%;
+	height: 5vh;
+}
+
+#account {
+	float: left;
+	margin-left: 90%;
+	padding: 7px;
+	border-radius: 5px;
+	font-size: 16px;
+	border: 2px solid #009688;
+	background-color: #009688;
+	color: #fff;
+	text-transform: capitalize;
+}
+
+
+/* Adrress Page */
+
+.address-form {
+	display: flex;
+	height: 90vh;
+	top: 57%;
+	justify-content: center;
+	align-items: center;
+	padding: 25px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.addForm {
+	max-width: 700px;
+	width: 100%;
+	background: rgba(233, 233, 233, 0.70);
+	padding: 25px 30px;
+	filter: blur(30%);
+	border-radius: 16px;
+}
+
+.addForm label {
+	font-size: 18px;
+}
+
+.addForm h1 {
+	font-size: 20px;
+}
+
+.addForm h2 {
+	font-size: 20px;
+}
+
+.add-form input {
+	height: 40px;
+	width: 24%;
+	outline: none;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+	padding-left: 15px;
+	font-size: 16px;
+	border-bottom-width: 2px;
+	transition: all 0.3s ease;
+	font-size: 18px;
+}
+
+.add-form #identification {
+	width: 23%;
+	padding-right: 8%;
+	margin-left: 9%;
+	height: 5vh;
+}
+
+.add-form #identity {
+	margin-left: 3%;
+}
+
+.add-form #idnumber {
+	width: 23%;
+	padding-right: 8%;
+	margin-left: 3%;
+	height: 5vh;
+}
+
+.add-form #doi {
+	width: 23%;
+	padding-right: 8%;
+	margin-left: 10.8%;
+	height: 5vh;
+}
+
+.add-form #district {
+	width: 25%;
+	padding-right: 8%;
+	height: 5vh;
+}
+
+.add-form #city {
+	width: 25%;
+	padding-right: 8%;
+	margin-left: 13%;
+	height: 5vh;
+}
+
+.add-form #street {
+	width: 25%;
+	padding-right: 8%;
+	margin-left: 9%;
+	height: 5vh;
+}
+
+.add-form #ward {
+	width: 25%;
+	padding-right: 8%;
+	height: 5vh;
+}
+
+.add-form #province {
+	width: 25%;
+	padding-right: 8%;
+	margin-left: 13%;
+	height: 5vh;
+}
+
+.add-form #country {
+	width: 25%;
+	padding-right: 8%;
+	margin-left: 9%;
+	height: 5vh;
+}
+
+.add-form #mobile {
+	width: 37%;
+	padding-right: 8%;
+	margin-left: 8%;
+	height: 5vh;
+}
+
+.add-form #landline {
+	width: 37%;
+	padding-right: 8%;
+	margin-left: 10%;
+	height: 5vh;
+}
+
+#address {
+	float: left;
+	margin-left: 90%;
+	padding: 7px;
+	border-radius: 5px;
+	font-size: 16px;
+	border: 2px solid #009688;
+	background-color: #009688;
+	color: #fff;
+	text-transform: capitalize;
+}
+
+
+/*  Verification */
+
+.verification {
+	display: flex;
+	height: 80vh;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	/* background: rgba(1, 80, 1, 0.418); */
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.verify {
+	max-width: 700px;
+	width: 100%;
+	background: rgba(233, 233, 233, 0.70);
+	padding: 25px 30px;
+	filter: blur(30%);
+	border-radius: 16px;
+}
+
+.verify h1 {
+	margin-left: 34%;
+	font-size: 30px;
+}
+
+.verify label {
+	font-size: 18px;
+}
+
+.otp input {
+	height: 40px;
+	width: 24%;
+	outline: none;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+	padding-left: 15px;
+	font-size: 16px;
+	border-bottom-width: 2px;
+	transition: all 0.3s ease;
+	font-size: 18px;
+}
+
+.otp #otpnumber {
+	width: 33%;
+	padding-right: 8%;
+	margin-left: 34%;
+}
+
+#text {
+	font-size: 18px;
+	margin-left: 4%;
+}
+
+#textt {
+	margin-left: 20%;
+	font-size: 18px;
+}
+
+#ttext {
+	margin-left: 24%;
+	font-size: 18px;
+}
+
+#resend {
+	float: left;
+	margin-top: 1%;
+	margin-left: 30%;
+	padding: 5px;
+	border-radius: 5px;
+	font-size: 16px;
+	border: 2px solid #009688;
+	background-color: #009688;
+	color: #fff;
+	text-transform: capitalize;
+}
+
+#proceed {
+	float: right;
+	margin-top: -6%;
+	margin-right: 40%;
+	padding: 5px;
+	border-radius: 5px;
+	font-size: 16px;
+	border: 2px solid #009688;
+	background-color: #009688;
+	color: #fff;
+	margin-left: 50%;
+	width: 10%;
+	text-transform: capitalize;
+}
+
+.verify h1 {
+	margin-left: 34%;
+	font-size: 30px;
+}
+
+.verify label {
+	font-size: 18px;
+}
+
+.otp input {
+	height: 40px;
+	width: 24%;
+	outline: none;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+	padding-left: 15px;
+	font-size: 16px;
+	border-bottom-width: 2px;
+	transition: all 0.3s ease;
+	font-size: 18px;
+}
+
+.otp #otpnumber {
+	width: 32%;
+	padding-right: 8%;
+	margin-left: 32%;
+}
+
+#text {
+	font-size: 18px;
+	margin-left: 4%;
+}
+
+#textt {
+	margin-left: 20%;
+	font-size: 18px;
+}
+
+#ttext {
+	margin-left: 24%;
+	font-size: 18px;
+}
+
+#resend {
+	float: left;
+	margin-top: 1%;
+	margin-left: 27%;
+	padding: 5px;
+	border-radius: 5px;
+	font-size: 16px;
+	border: 2px solid #009688;
+	background-color: #009688;
+	color: #fff;
+	text-transform: capitalize;
+}
+
+#proceed {
+	float: right;
+	margin-top: -6%;
+	margin-right: 28%;
+	padding: 5px;
+	border-radius: 5px;
+	font-size: 16px;
+	border: 2px solid #009688;
+	background-color: #009688;
+	color: #fff;
+	margin-left: 50%;
+	width: 15%;
+	text-transform: capitalize;
+}
+
+.passwordNote {
+	position: absolute;
+	width: 30%;
+	font-size: 14px;
+	margin-top: -0.4%;
+	font-weight: bold;
+}
+
+/* History Page */
+.historyBox {
+	margin-top: 1%;
+    max-width: 1362px;
+    width: 100%;
+	margin-left: 15%;
+    background: rgba(233, 233, 233, 0.70);
+    padding: 25px 30px;
+    filter: blur(30%);
+    border-radius: 16px;
+}
+
+td, th {
+    border: 1px solid #ffffff;
+    text-align: center;
+    padding: 8px;
+	font-size: 14px;
+}
+
+th {
+    color: black;
+	font-size: 16px;
 }
