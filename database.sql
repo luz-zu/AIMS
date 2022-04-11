@@ -12,6 +12,24 @@ CREATE TABLE IF NOT EXISTS `contact` (
   PRIMARY KEY (`id`)
 );
 
+CREATE TABLE IF NOT EXISTS `crop_details` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(50) DEFAULT NULL,
+  `crop_name` varchar(50) DEFAULT NULL,
+  `crop_image` varchar(255) DEFAULT NULL,
+  `production` varchar(50) DEFAULT NULL,
+  `growth_status` varchar(50) DEFAULT NULL,
+  `fertilizers_used` varchar(50) DEFAULT NULL,
+  `reproduction_type` varchar(50) DEFAULT NULL,
+  `crop_cycle` varchar(50) DEFAULT NULL,
+  `seasons` varchar(50) DEFAULT NULL,
+  `market_rate` varchar(50) DEFAULT '10',
+  `farmer_rate` varchar(50) DEFAULT NULL,
+  `province` varchar(50) DEFAULT NULL,
+  `time` timestamp NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  PRIMARY KEY (`id`)
+);
+
 CREATE TABLE IF NOT EXISTS `farmer_details` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `firstname` varchar(50) DEFAULT NULL,

@@ -8,17 +8,25 @@
 	outline: none;
 	border: none;
 	text-decoration: none;
-	-webkit-transition: .2s linear;
-	transition: .2s linear;
+}
+
+.cont {
+	display: flex;
 }
 
 .homepage-heading {
 	font-size: 50px;
-	margin-top: 10%;
+	margin-top: 12%;
 	margin-bottom: 30%;
-	margin-left: 15%;
 	text-align: center;
 	text-transform: capitalize;
+}
+
+.cont img {
+	margin-left: 5%;
+	margin-top: 4%;
+	width: 40%;
+	height: 40%;
 }
 
 nav {
@@ -311,8 +319,8 @@ section {
 	right: 0;
 	-webkit-box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.5);
 	box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.5);
-	-webkit-transition: .4s linear;
-	transition: .4s linear;
+	/* -webkit-transition: .4s linear;
+	transition: .4s linear; */
 }
 
 .navbar a {
@@ -342,8 +350,8 @@ section {
 	right: 0;
 	-webkit-box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.5);
 	box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.5);
-	-webkit-transition: .4s linear;
-	transition: .4s linear;
+	/* -webkit-transition: .4s linear;
+	transition: .4s linear; */
 }
 
 .categories::-webkit-scrollbar {
@@ -444,8 +452,8 @@ section {
 	right: 0;
 	-webkit-box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.5);
 	box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.5);
-	-webkit-transition: .4s linear;
-	transition: .4s linear;
+	/* -webkit-transition: .4s linear;
+	transition: .4s linear; */
 }
 
 .logout-form form {
@@ -646,6 +654,21 @@ section {
 	height: 25rem;
 	overflow: hidden;
 	position: relative;
+	border-radius: 10px;
+	border: solid rgba(155, 155, 155, 0.842);
+}
+
+.emptyContent {
+	text-align: center;
+    width: 474px;
+    background-color: #244d4d;;
+	border: solid transparent;
+	color: white;
+	margin-top: 10%;
+	margin-left: 35%;
+    padding: 50px;
+    border-radius: 10px;
+    font-size: 20px;
 }
 
 .banner-container .banner img {
@@ -662,18 +685,19 @@ section {
 
 .banner-container .banner .content {
 	position: absolute;
-	top: 50%;
+	top: 30%;
 	left: 2rem;
 	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
 }
 
 .banner-container .banner .content span {
-	font-size: 1.7rem;
+	font-size: 2.0rem;
+	font-weight: bold;
 	color: #032525;
 }
 
-.banner-container .banner .content h3 {
+.banner-container .banner .content p {
 	padding-top: .5rem;
 	font-size: 2.2rem;
 	color: #032525;
@@ -1179,7 +1203,7 @@ input[type=password] {
 	outline: none;
 	color: black;
 	border-radius: 24px;
-	transition: 0.25s;
+	/* transition: 0.25s; */
 	cursor: pointer;
 }
 
@@ -1268,7 +1292,7 @@ input[type=password] {
 	padding-left: 15px;
 	font-size: 16px;
 	border-bottom-width: 2px;
-	transition: all 0.3s ease;
+	/* transition: all 0.3s ease; */
 	font-size: 18px;
 }
 
@@ -1416,7 +1440,7 @@ input[type=password] {
 	width: 27%;
 	margin-top: 2%;
 	padding-right: 8%;
-	margin-left: 10.5%;
+	margin-left: 11%;
 	height: 4.5vh;
 }
 
@@ -1425,7 +1449,6 @@ input[type=password] {
 	margin-top: 2%;
 	padding-right: 8%;
 	margin-left: 5.5%;
-    margin-right: 4.2%;
 	height: 4.5vh;
 }
 
@@ -1434,16 +1457,16 @@ input[type=password] {
 	margin-top: 2%;
 	padding-right: 8%;
 	margin-left: 1%;
-    margin-right: 4.2%;
 	height: 4.5vh;
 }
 
 #cropcycleType {
 	width: 27%;
-	margin-top: 2%;
-	padding-right: 8%;
-	margin-left: 7.9%;
-	height: 4.5vh;
+    margin-top: 2%;
+    padding-right: 8%;
+    margin-left: 8%;
+	margin-right: 4.4%;
+    height: 4.5vh;
 }
 
 .signup-user-details #city {
@@ -1508,18 +1531,6 @@ input[type=password] {
 	text-transform: capitalize;
 }
 
-.cropDetails {
-	margin-top: 10%;
-	margin-left: 30%;
-	height: 100%;
-	max-width: 700px;
-	width: 100%;
-	background: rgba(233, 233, 233, 0.70);
-	padding: 25px 30px;
-	filter: blur(30%);
-	border-radius: 16px;
-}
-
 .main-profile-edit {
 	display: flex;
 	height: 100vh;
@@ -1559,7 +1570,7 @@ input[type=password] {
 	padding-left: 15px;
 	font-size: 16px;
 	border-bottom-width: 2px;
-	transition: all 0.3s ease;
+	/* transition: all 0.3s ease; */
 	font-size: 18px;
 }
 
@@ -1716,21 +1727,19 @@ input[type=password] {
 
 
 /* cropdetails css */
-
 .main-cropdetails {
 	display: flex;
 	height: 10%;
 	justify-content: center;
 	align-items: center;
 	padding: 10px;
-	/* background: rgba(1, 80, 1, 0.418); */
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
 }
 
 .cropDetails {
-	margin-left: 1%;
+	margin-top: 6%;
 	max-width: 1000px;
 	width: 100%;
 	background: rgba(233, 233, 233, 0.70);
@@ -1752,8 +1761,23 @@ input[type=password] {
 	padding-left: 15px;
 	font-size: 16px;
 	border-bottom-width: 2px;
-	transition: all 0.3s ease;
+	/* transition: all 0.3s ease; */
 	font-size: 18px;
+}
+
+#imagesupload {
+	height: 40px;
+	width: 29%;
+	margin-left: 4%;
+	outline: none;
+	text-align: center;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+	padding: 4px;
+	font-size: 16px;
+	border-bottom-width: 2px;
+	/* transition: all 0.3s ease; */
+	font-size: 18px;	
 }
 
 .inputbox_cropdetails #cropname {
@@ -1765,7 +1789,8 @@ input[type=password] {
 .inputbox_cropdetails #production {
 	width: 27%;
 	padding-right: 8%;
-	margin-left: 4%;
+	margin-left: 4.5%;
+	margin-right: 4.3%;
 }
 
 .inputbox_cropdetails #growth {
@@ -1777,8 +1802,9 @@ input[type=password] {
 
 .inputbox_cropdetails #fertilizers {
 	width: 27%;
-	padding-right: 8%;
-	margin-left: 4.5%;
+    padding-right: 8%;
+    margin-left: 4.7%;
+    margin-right: 4.4%;
 }
 
 .inputbox_cropdetails #reproduction {
@@ -1797,18 +1823,18 @@ input[type=password] {
 .inputbox_cropdetails #growth_season {
 	width: 27%;
 	padding-right: 8%;
-	margin-left: 10.7%;
-	margin-right: 4.2%;
+	margin-left: 11%;
 }
 
 .inputbox_cropdetails #farmers {
 	width: 27%;
 	padding-right: 8%;
-	margin-left: 3%;
+	margin-left: 2.5%;
+	margin-right: 4.3%;
 }
 
 .inputbox_cropdetails #submit {
-	margin-right: 10%;
+	margin-right: 3%;
 	float: right;
 	margin-top: 1%;
 	padding: 5px;
@@ -1817,8 +1843,8 @@ input[type=password] {
 	border: 2px solid #009688;
 	background-color: #009688;
 	color: #fff;
-	/* width: 5%; */
 	text-transform: capitalize;
+	cursor: pointer;
 }
 
 .inputbox_cropdetails #cancel {
@@ -2015,7 +2041,7 @@ input[type=password] {
 	padding-left: 15px;
 	font-size: 16px;
 	border-bottom-width: 2px;
-	transition: all 0.3s ease;
+	/* transition: all 0.3s ease; */
 	font-size: 18px;
 }
 
@@ -2152,7 +2178,7 @@ input[type=password] {
 	padding-left: 15px;
 	font-size: 16px;
 	border-bottom-width: 2px;
-	transition: all 0.3s ease;
+	/* transition: all 0.3s ease; */
 	font-size: 18px;
 }
 
@@ -2223,7 +2249,7 @@ input[type=password] {
 	padding-left: 15px;
 	font-size: 16px;
 	border-bottom-width: 2px;
-	transition: all 0.3s ease;
+	/* transition: all 0.3s ease; */
 	font-size: 18px;
 }
 

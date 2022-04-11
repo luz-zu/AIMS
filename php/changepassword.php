@@ -20,7 +20,7 @@
                         text: "You have successfully changed your account password.",
                         type: "success"
                     }).then(function() {
-                        window.location = "../extras/home.html";
+                        window.location = "../php/home.php";
                     });
                 }
             </script>';
