@@ -16,19 +16,19 @@
 <body>
 
 <header class="header">
-    <a href="../php/home.php" class="logo"> <i class="fas fa-leaf"></i> AIMS </a>
+    <a href="./adminDashboard.php" class="logo"> <i class="fas fa-leaf"></i> AIMS </a>
     <div class="icons">
         <div class="dropdown1">
             <a id="clipboard-btn" class="fas fa-clipboard"></a>
             <div class="dropdown-content1">
-                <a href="../extras/cropdetails.html">Add Crop Details</a>
+                <a href="../extras/adminMarketRate.html">Add Market Details</a>
+                <a href="./blog.php">Add Blog</a>
             </div>
         </div>
         <div class="dropdown">
             <a id="login-btn" class="fas fa-user"></a>
             <div class="dropdown-content">
-                <a href="../extras/profileedit.html">Edit Profile</a>
-                <a href="../extras/changepassword.html">Change Password</a>
+                <a href="../extras/adminChangePassword.html">Change Password</a>
                 <a href="./logout.php">Log Out</a>
             </div>
         </div>
@@ -37,18 +37,12 @@
 </header>
 
 <body>
-    <div class="historyBox">
+    <div class="adminhistoryBox">
         <table>
             <thead>
                 <tr>
                     <th>Crop Name</th>
-                    <th>Production(KG)</th>
-                    <th>Growth Status</th>
-                    <th>Fertilizers Used</th>
-                    <th>Reproduction Type</th>
-                    <th>Crop Cycle</th>
-                    <th>Seasons</th>
-                    <th>Farmer Rate</th>
+                    <th>Market Rate</th>
                     <th>Province</th>
                     <th>Updated On</th>
                 </tr>
@@ -57,19 +51,13 @@
             <?php
             session_start(); // starts a new session or resumes one that has already initiated.
             include('./database_connection.php');
-            $currentUser = $_SESSION['username'];
-            $mysql_query = "select * from crop_details where username = '$currentUser'"; // returns a set of records.
+            $currentUser = $_SESSION['email'];
+            $mysql_query = "select * from market_details where email = '$currentUser'"; // returns a set of records.
             $established_connection = $mysql_connection -> query($mysql_query); // to run above query.
             while ($row = $established_connection -> fetch_assoc()) { // fetching row as an associative array using while loop.
                 echo "<tr>";
                 echo "<td>".$row['crop_name']. "</td>"; // displaying the result.
-                echo "<td>".$row['production']. "</td>"; // displaying the result.
-                echo "<td>".$row['growth_status']. "</td>"; // displaying the result.
-                echo "<td>".$row['fertilizers_used']. "</td>"; // displaying the result.
-                echo "<td>".$row['reproduction_type']. "</td>"; // displaying the result.
-                echo "<td>".$row['crop_cycle']. "</td>"; // displaying the result.
-                echo "<td>".$row['seasons']. "</td>"; // displaying the result.
-                echo "<td>".$row['farmer_rate']. "</td>"; // displaying the result.
+                echo "<td>".$row['market_rate']. "</td>"; // displaying the result.
                 echo "<td>".$row['province']. "</td>"; // displaying the result.
                 echo "<td>".$row['time']. "</td>"; // displaying the result.
                 echo "</tr>";
