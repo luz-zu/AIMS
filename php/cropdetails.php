@@ -17,6 +17,24 @@
     $seasons = $_POST['seasons'];
     $farmers = $_POST['farmers'];
     $province = $_POST['province1'];
+    if (!is_numeric($production)) {
+    
+        echo '
+        
+        <script>
+            window.onload = function() {
+                swal({
+                    title: "Error!",
+                    icon: "error",
+                    text: "Only numerics value are accepted in production. Please try again.",
+                    type: "error"
+                }).then(function() {
+                    window.location = "../extras/cropdetails.html";
+                });
+            }
+        </script>';
+        return false;
+        }
 
     if (!empty($_FILES["imagesupload"]["name"])) {
         $allowTypes = array('jpg','png','jpeg','gif');
