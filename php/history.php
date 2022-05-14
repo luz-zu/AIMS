@@ -55,23 +55,23 @@
             </thead>
             <tbody id="historyTable">
             <?php
-            session_start();
+            session_start(); // starts a new session or resumes one that has already initiated.
             include('./database_connection.php');
             $currentUser = $_SESSION['username'];
-            $mysql_query = "select * from crop_details where username = '$currentUser'";
-            $established_connection = $mysql_connection -> query($mysql_query);
-            while ($row = $established_connection -> fetch_assoc()) {
+            $mysql_query = "select * from crop_details where username = '$currentUser'"; // returns a set of records.
+            $established_connection = $mysql_connection -> query($mysql_query); // to run above query.
+            while ($row = $established_connection -> fetch_assoc()) { // fetching row as an associative array using while loop.
                 echo "<tr>";
-                echo "<td>".$row['crop_name']. "</td>";
-                echo "<td>".$row['production']. "</td>";
-                echo "<td>".$row['growth_status']. "</td>";
-                echo "<td>".$row['fertilizers_used']. "</td>";
-                echo "<td>".$row['reproduction_type']. "</td>";
-                echo "<td>".$row['crop_cycle']. "</td>";
-                echo "<td>".$row['seasons']. "</td>";
-                echo "<td>".$row['farmer_rate']. "</td>";
-                echo "<td>".$row['province']. "</td>";
-                echo "<td>".$row['time']. "</td>";
+                echo "<td>".$row['crop_name']. "</td>"; // displaying the result.
+                echo "<td>".$row['production']. "</td>"; // displaying the result.
+                echo "<td>".$row['growth_status']. "</td>"; // displaying the result.
+                echo "<td>".$row['fertilizers_used']. "</td>"; // displaying the result.
+                echo "<td>".$row['reproduction_type']. "</td>"; // displaying the result.
+                echo "<td>".$row['crop_cycle']. "</td>"; // displaying the result.
+                echo "<td>".$row['seasons']. "</td>"; // displaying the result.
+                echo "<td>".$row['farmer_rate']. "</td>"; // displaying the result.
+                echo "<td>".$row['province']. "</td>"; // displaying the result.
+                echo "<td>".$row['time']. "</td>"; // displaying the result.
                 echo "</tr>";
             }
             ?>
