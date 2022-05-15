@@ -100,12 +100,12 @@
 <section class="blog">
     <?php
         include('../php/database_connection.php'); // copying data from another location.
-        $desc = $_REQUEST['blog']; // // holding the data received from html using the Request method.
-        $mysql_query = "SELECT * from blog where blog_title = '$desc'"; // returns a set of records from the specified table.
+        $desc = $_REQUEST['blogid']; // // holding the data received from html using the Request method.
+        $mysql_query = "SELECT * from blog where id = '$desc'"; // returns a set of records from the specified table.
         $established_connection = $mysql_connection -> query($mysql_query); // to run above query.
         while ($row = $established_connection -> fetch_assoc()) { // fetching row as an associative array using while loop.
             $blogTitle = $row['blog_title'];
-            echo "<h1 class='title'> <span>".$blogTitle."</span></h1> // displaying the result.
+            echo "<h1 class='title'> <span>".$blogTitle."</span></h1>
             <div class='box-container'>";
                 echo "<div class='box'>";
                     echo "<div class='content'>";

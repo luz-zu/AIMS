@@ -106,11 +106,11 @@
         $mysql_query = "SELECT * from blog"; // returns a set of records from the specified table.
         $established_connection = $mysql_connection -> query($mysql_query);
         while ($row = $established_connection -> fetch_assoc()) {
-            $blogTitle = $row['blog_title'];
+            $blogId = $row['id'];
             echo "<div class='box'>";
                     echo "<div class='content'>"; // Displaying Result
                     echo "<h3>" .$row['blog_title']. "</h3>"; // Displaying Result
-                    echo "<a href='blog_details.php?blog=$blogTitle' class='btn'>Read More</a>"; // Displaying Result
+                    echo "<a href='blog_details.php?blogid=$blogId' class='btn'>Read More</a>"; // Displaying Result
                     echo "<div class='icons'>"; // Displaying Result
                     echo "<a href='#'> <i class='fas fa-calendar'></i>".$row['updated_on']."</a>"; // Displaying Result
                     echo "<a href='#'> <i class='fas fa-user'></i> By ".$row['name']."</a>"; // Displaying Result
