@@ -1,6 +1,12 @@
-
 CREATE DATABASE IF NOT EXISTS `hamro_agriculture`;
 USE `hamro_agriculture`;
+
+CREATE TABLE IF NOT EXISTS `admin_details` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `email` varchar(50) DEFAULT NULL,
+  `password` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+);
 
 CREATE TABLE IF NOT EXISTS `contact` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -56,5 +62,15 @@ CREATE TABLE IF NOT EXISTS `farmer_details` (
   `ward` varchar(50) DEFAULT NULL,
   `gender` varchar(50) DEFAULT NULL,
   `timestamp` datetime DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  PRIMARY KEY (`id`)
+);
+
+CREATE TABLE IF NOT EXISTS `market_details` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `email` varchar(50) DEFAULT NULL,
+  `crop_name` varchar(50) DEFAULT NULL,
+  `market_rate` varchar(50) DEFAULT NULL,
+  `province` varchar(50) DEFAULT NULL,
+  `time` timestamp NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
   PRIMARY KEY (`id`)
 );

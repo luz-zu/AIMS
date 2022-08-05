@@ -1182,6 +1182,24 @@ input[type=password] {
 	box-sizing: border-box;
 }
 
+input[type=text] {
+	width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#blogTitle {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
 #login-btn:hover {
 	transform: scale(1.2);
 	cursor: pointer;
@@ -1224,7 +1242,7 @@ input[type=password] {
 .forgotPassword a {
 	font-size: 14px;
 	color: rgb(94, 93, 93);
-	margin-left: 32%;
+	margin-left: %;
 	cursor: pointer;
 }
 
@@ -1685,6 +1703,17 @@ input[type=password] {
 	background-attachment: fixed;
 }
 
+.blog-div {
+	display: flex;
+	height: 80vh;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
 .new-password {
 	max-width: 500px;
 	width: 100%;
@@ -1694,7 +1723,22 @@ input[type=password] {
 	border-radius: 16px;
 }
 
+.blog-divsecond {
+	max-width: 500px;
+	width: 100%;
+	background: rgba(233, 233, 233, 0.70);
+	padding: 25px 30px;
+	filter: blur(30%);
+	border-radius: 16px;
+}
+
+
+
 .new-password label {
+	font-size: 18px;
+}
+
+.blog-divsecond label {
 	font-size: 18px;
 }
 
@@ -1711,7 +1755,34 @@ input[type=password] {
 	text-transform: capitalize;
 }
 
+.blog-div #submit {
+	float: right;
+	margin-top: 1%;
+	padding: 5px;
+	border-radius: 5px;
+	font-size: 16px;
+	border: 2px solid #009688;
+	background-color: #009688;
+	color: #fff;
+	/* width: 5%; */
+	text-transform: capitalize;
+}
+
 .main-new-password #cancel {
+	margin-left: 100%;
+	float: right;
+	margin-top: -8.5%;
+	padding: 5px;
+	border-radius: 5px;
+	font-size: 16px;
+	border: 2px solid #009688;
+	background-color: #009688;
+	color: #fff;
+	/* width: 5%; */
+	text-transform: capitalize;
+}
+
+.blog-div #cancel {
 	margin-left: 100%;
 	float: right;
 	margin-top: -8.5%;
@@ -2322,6 +2393,17 @@ input[type=password] {
     border-radius: 16px;
 }
 
+.adminhistoryBox {
+	margin-top: 1%;
+    max-width: 548px;
+    width: 100%;
+	margin-left: 15%;
+    background: rgba(233, 233, 233, 0.70);
+    padding: 25px 30px;
+    filter: blur(30%);
+    border-radius: 16px;
+}
+
 td, th {
     border: 1px solid #ffffff;
     text-align: center;
@@ -2332,4 +2414,128 @@ td, th {
 th {
     color: black;
 	font-size: 16px;
+}
+
+/* Slideshow CSS*/
+
+#slideshow {
+	margin-right: 20%;
+    overflow: hidden;
+    height: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Styling each slides with a fixed width and height */
+
+.slide {
+    float: left;
+    height: 510px;
+    width: 50%;
+    /* width: 800px; */
+}
+
+/* Add animation to the slides */
+
+.slide-wrapper {
+    
+    /* Calculate the total width on the basis of number of slides */
+    width: calc(800px * 4);
+    
+    /* Specify the animation with the duration and speed */
+    animation: slide 15s ease infinite;
+	display: flex;
+}
+.slide {
+	width: 100%;
+}
+/* Set the background color of each of the slides */
+
+.slide:nth-child(1) {
+    background: white;
+}
+
+.slide:nth-child(2) {
+    background: white;
+}
+
+.slide:nth-child(3) {
+    background: white;
+}
+
+.slide:nth-child(4) {
+    background: white;
+}
+
+/* Define the animation for the slideshow */
+
+@keyframes slide {
+    
+    /* Calculate the margin-left for each of the slides */
+	0% {
+		margin-left: 0px;
+	}
+    20% {
+        margin-left: 0px;
+    }
+    30% {
+        margin-left: calc(-100% * 1);
+    }
+    50% {
+        margin-left: calc(-100% * 1);
+    }
+    60% {
+        margin-left: calc(-100% * 2);
+    }
+    70% {
+        margin-left: calc(-100% * 2);
+    }
+    80% {
+        margin-left: calc(-100% * 3);
+    }
+    90% {
+        margin-left: calc(-100% * 3);
+    }
+    /* 20% {
+        margin-left: 0px;
+    }
+    30% {
+        margin-left: calc(-728px * 1);
+    }
+    60% {
+        margin-left: calc(-728px * 2);
+    }
+    80% {
+        margin-left: calc(-728px * 3);
+    } */
+}
+
+.slide-number{
+	margin-left: 30%;
+	font-size: 36px;
+}
+
+.mp{
+
+	margin-left: 0%;
+	border-radius: 5px;
+	font-size: 16px;
+	border: 2px solid #009688;
+	/* background-color: #009688; */
+	color: black;
+	/* width: 5%; */
+	text-transform: capitalize;
+}
+
+.marketrate_box{
+	margin-top: 1%;
+    max-width: 395px;
+	justify-content: center;
+    width: 100%;
+	margin-left: 40%;
+    background: rgba(233, 233, 233, 0.70);
+    padding: 25px 30px;
+    filter: blur(30%);
+    border-radius: 16px;
+
 }

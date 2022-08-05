@@ -1,13 +1,14 @@
-<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> <!-- initialize the sweetalert notification plugin. -->
 
 <?php
-    include('./database_connection.php');
-    $customername = $_POST['customername'];
-    $customernumber = $_POST['customernumber'];
-    $customeremail = $_POST['customeremail'];
-    $customerfeedback = $_POST['customerfeedback'];
-    $mysql_query = "INSERT INTO contact (username, phonenumber, email, message) values ('$customername', '$customernumber', '$customeremail', '$customerfeedback')";
-    $mysql_connection -> query($mysql_query);
+    include('./database_connection.php'); // copying data from another location.
+    $customername = $_POST['customername']; // holding the data received from html using 
+    $customernumber = $_POST['customernumber']; // holding the data received from html using 
+    $customeremail = $_POST['customeremail']; // holding the data received from html using 
+    $customerfeedback = $_POST['customerfeedback']; // holding the data received from html using 
+    $mysql_query = "INSERT INTO contact (username, phonenumber, email, message) values ('$customername', '$customernumber', '$customeremail', '$customerfeedback')"; // insert the given data in mysql.
+    $mysql_connection -> query($mysql_query);// to run above query.
+    // triggering sweetalert notification.
     echo '
     <script>
         window.onload = function() {
