@@ -30,7 +30,7 @@
     if($password === $confirmpassword) {
         if (strlen($password) >= 6) {
             if (strlen($phonenumber) > 9 and strlen($phonenumber) < 11) {
-                $mysql_query = "INSERT INTO farmer_details (firstname, middlename, lastname, email, username, dob, phone_number, password, nationality, citizenship_number, education, marital_status, father_name, mother_name, spouse_name, child_name, family_member, province, district, city, street, ward, gender) values ('$firstname', '$middlename', '$lastname', '$email', '$username', '$dateofbirth', '$phonenumber', '$password', '$nationality', '$identity', '$education', '$marialstatus', '$fathername', '$mothername', '$spousename', '$childname', '$familymember', '$province', '$district', '$city', '$street', '$ward', '$gender')";
+                $mysql_query = "INSERT INTO farmer_details (firstname, middlename, lastname, email, username, dob, phone_number, passwords, nationality, citizenship_number, education, marital_status, father_name, mother_name, spouse_name, child_name, family_member, province, district, city, street, ward, gender) values ('$firstname', '$middlename', '$lastname', '$email', '$username', '$dateofbirth', '$phonenumber', '$password', '$nationality', '$identity', '$education', '$marialstatus', '$fathername', '$mothername', '$spousename', '$childname', '$familymember', '$province', '$district', '$city', '$street', '$ward', '$gender')";
                 $mysql_connection -> query($mysql_query);
                 echo '
                 <script>
