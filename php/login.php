@@ -11,7 +11,13 @@
     $_SESSION["username"]= $row['username']; // stroing user name in defined session variable to be used across multiple pages.
     if ($established_connection -> num_rows > 0) { // checking the number of rows in mysql with an if statement.
         header('Location: ../php/home.php'); // using php function to redirect a user from on webpage to another.
-        echo '
+        //echo '
+   
+   
+    } else {
+        header('Location: ../extras/login.html'); // using php function to redirect a user from on webpage to another.
+    }
+    echo '
     <script>
         window.onload = function() {
             swal({
@@ -24,23 +30,6 @@
             });
         }
     </script>';
-   
-    } else {
-        header('Location: ../extras/login.html'); // using php function to redirect a user from on webpage to another.
-    }
-    // echo '
-    // <script>
-    //     window.onload = function() {
-    //         swal({
-    //             title: "Login Successful!",
-    //             icon: "success",
-    //             text: "You have successfully login your account.",
-    //             type: "success"
-    //         }).then(function() {
-    //             window.location = "../extras/login.html";
-    //         });
-    //     }
-    // </script>';
    
 ?>
 
